@@ -1,0 +1,71 @@
+body {
+  background-color: black;
+  text-align: center;
+}
+
+.griglia {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+}
+
+.griglia > li {
+  border: 2px solid black;
+  display: inline;
+  width: 100px;
+  height: 100px;
+
+
+  margin: 10px;
+  background-color: red;
+  text-align: center;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+float: left;
+padding: 5px;
+}
+
+li {
+
+}
+h1
+{ color: white;}
+
+h2 { color: white;}
+nav {
+  background-color: #000; height: 52px; width: 100%; position: fixed; top: 0; left: 0;
+}
+
+nav ul {     /**non ho messo il punto in mezzo e funziona se aggiungo il punto no**/
+  list-style: none; margin: 0 auto; padding: 0; width: 100%;
+}
+
+nav ul ul {
+  display: none; position: absolute; top: 100%; left: 0; width: 100%;  /**aggiungendo display: none le sottocategorie sono scomparse**/
+}
+
+nav ul li {
+  position: relative; float: left;width: 20%; text-align: center; /**ogni voce <li> prenderà il 20% del totale**/
+}
+
+nav ul li:hover ul /**cosa succede quando passiamo sopra ul li ce lo dice hover - quando passiamo sopra ul le voci li devono essere visibili**/ {
+  display: block;
+}
+
+nav ul li li {
+  position: relative; float: none; width: 100%; border: none;
+}
+nav ul li a {display: block;text-decoration: none; color: #FFF; padding: 15px 25px; font-size: 1.2em; box-sizing: border-box; border-right: solid 2px black; border-left: solid 2px black;
+}
+
+nav ul ul li a{ font-size: 1rem; border-bottom: solid 2px #000;}
+
+nav ul ul li:first-child a{border-top: solid 2px #000;} /**first-child lavora solo su primo figlio**/
+
+nav ul li:hover a {background-color: #FFF; color: #000; text-decoration: none; transition: 0.5s;} /**hover è chiamata pseudo classe**/
+
+nav ul li li:hover a{background-color: #000; color: white; }

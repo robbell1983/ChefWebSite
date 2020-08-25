@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chef Simone Ceppaglia</title>
+    <link rel="stylesheet" href="modulo.css" type="text/css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="rob.html">Home</a></li>     <!-- <a> è il tag per i link + "#" quando il link non porta da nessuna parte-->
+        <li><a href="Formazione.html">Idea</a></li>
+        <li><a href="ricetta.html">Ricetta</a></li>
+        <li><a href="antipasti.html">La mia Cucina</a>    <!-- per aprire un menu interno ad un altro menu non chiudere il tag </li> ma fallo dopo-->
+        <ul>
+          <li><a href="antipasti.html">Antipasti</a></li>
+            <li><a href="primi.html">Primi</a></li>
+              <li><a href="secondi.html">Secondi</a></li>
+              <li><a href="Dessert.html">Dessert</a></li>
+        </ul>
+      </li>
+      <li><a href="modulo.html">Contatti</a></li>
+      <!--qui aggiungo un ITEM al primo menu-->
+       <li><a href="https://www.instagram.com/simoneceppaglia/"target="_blank"><img src="insta.jpg" width="16" height="16" /></a></li>
+      </ul>
+    </nav>
+    <section id="modulo">
+      <div class="content">
+        <br><br>
+        <h3>Richiedi informazioni</h3>
+          <h3>mail to: simoneceppaglia1980@libero.it</h3>
+
+        <form action="dati.php" method="post">
+            <img src="LOGO.PNG" alt="">
+          <ul>
+            <li class="uno">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" class="testo" required>
+          </li>
+          <li class="due">
+          <label for="email">Email</label>
+          <input type="email" name="nome" id="email" class="testo" required>
+        </li>
+        <li class="tre">
+        <label for="nome">Messaggio</label>
+        <textarea name="testo" id="testo"></textarea>
+        </li>
+      <li class="quattro">
+      <input type="submit" value="richiedi informazioni" class="pulsante">
+    </li>
+          </ul>
+
+
+        </form>
+
+      </div>
+    </section>
+
+
+  </body>
+</html>
